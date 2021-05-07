@@ -1,0 +1,88 @@
+
+.download__bookmark{
+    margin-top: 15rem;
+
+    @include respond(tab-port) {
+                
+        margin-top: 2rem;
+     }
+
+    &--info{
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    &--h2{
+        font-size: 3rem;
+        color: $color-black;
+    }
+
+    &--p{
+        font-size: 1.8rem;
+        @include flexcenter;
+        margin-top: 1rem;
+
+    }
+
+
+    .download__section{
+
+        &--card{
+            margin: 6rem 0;
+            position: relative;
+            justify-items: center;
+            text-align: center;
+            border-radius: .6rem;
+            box-shadow: .2rem .4rem 2rem rgba(0, 0, 0, .1);
+            padding: 3rem .25rem 1rem .25rem;
+            width: 35rem;
+            height: 40rem;
+
+            @include respond(tab-port) {
+                
+                margin: 0 auto;
+             }
+
+        }
+
+        &--heading{
+            font-size: 2rem;
+            margin-top: 1rem;
+            color: $color-black;
+            
+        }
+        &--p{
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+        &--dots{
+            margin: 4rem 0;
+        }
+
+        .card_one{
+            @include respond(tab-port) {
+                
+                margin: 5rem 0;
+             }
+        }
+
+        .card_two{
+            margin-top: 10rem;
+
+            @include respond(tab-port) {
+                
+                margin: 5rem 0;
+             }
+        }
+        .card_three{
+            margin-top: 20rem;
+
+            @include respond(tab-port) {
+                
+                margin: 5rem 0;
+             }
+        }
+
+    }
+}

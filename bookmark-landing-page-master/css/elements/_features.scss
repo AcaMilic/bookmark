@@ -1,0 +1,138 @@
+
+.features__bookmark{
+    margin-top: 10rem;
+
+    &--info{
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    &--h2{
+        font-size: 3rem;
+        color: $color-black;
+    }
+
+    &--p{
+        font-size: 1.8rem;
+        @include flexcenter;
+        margin-top: 1rem;
+        width: 50%;
+
+        @include respond(tab-port) {
+                
+            
+            width: 65%;
+         }
+
+
+    }
+
+    &--sections{
+        width: 60%;
+        margin: 6rem auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        border-bottom: .1rem solid $color-grey-dark-1;           
+
+
+        @include respond(tab-port) {
+            width: 100%;
+            grid-template-columns: 1fr;
+            border-bottom: none;
+            
+         }
+
+
+        a{
+            font-size: 2rem;
+            padding-bottom: 1rem;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+
+
+
+        }
+        .current::after {
+            content: '';
+            position: absolute;
+            top: 38px;
+            left: 40px;
+            height: 3px;
+            width: 0;
+            background: $color-primary-light;
+          }
+
+    }
+    .feature__section{
+
+
+        &--image{
+            position: relative;
+            &::before{
+              content: '';
+              position: absolute;
+              bottom: -8rem;
+              left: -8rem;
+              background: $color-primary;
+              display: block;
+              width: 60rem;
+              height: 30rem;
+              border-bottom-right-radius: 20rem;
+
+              @include respond(tab-port) {
+                
+                left: -15rem;
+             }
+            }
+            img{
+              position: relative;
+              width: 100%;
+        
+            }  
+            
+          }
+          &--h2{
+              margin-top: 5rem;
+              font-size: 3rem;
+              font-weight: bold;
+              color: $color-black;
+              @include respond(tab-port) {
+                
+                text-align: center;
+             }
+
+          }
+
+          &--p{
+              font-size: 1.8rem;
+              width: 74%;
+              margin-bottom: 2rem;
+
+              @include respond(tab-port) {
+                
+                text-align: center;
+                width: 100%;
+             }
+
+          }
+    }
+}
+
+
+.tab-border{
+    border-bottom: .4rem solid $color-primary-light;           
+
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+
+
+.show {
+    display: block !important;
+}

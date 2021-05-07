@@ -1,0 +1,129 @@
+
+nav {
+    position: relative;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    // background: $color-primary-dark;
+    z-index: 10292039402920;
+
+
+    .nav-links {
+        line-height: 2.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        transition: 1s all ease-in-out;
+        text-align: right;
+
+      
+
+        
+        @include respond(tab-port) {
+            position: absolute;
+            right: 0;
+            height: 50vh;
+            top: 0;
+            background: rgba($color-primary, .9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            display: none;
+            transition: opacity 0.5s ease-in;
+
+
+        }
+
+
+        li {
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            display: inline-block;
+            padding: 2rem 3.4rem;
+
+
+            @include respond(tab-port) {
+    
+                color: $color-white;
+
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.7rem;
+                font-weight: 100;
+                color: $color-black;
+                animation-delay: .1s;
+                transition: color 0.4s ease-in-out;
+
+
+                &:hover {
+                    color: $color-primary-light;
+                    text-decoration: none;
+                }
+            }
+            .logincolor{
+                color: $color-white;
+                background-color: $color-primary-light;
+                padding: 1.6rem 3.6rem;
+                border-radius: .5rem;
+                transition: 0.4s ease-in-out;
+
+                &:hover{
+                    background-color: $color-white;
+                    border: .2rem solid $color-primary-light;
+
+                }
+            }
+        }
+    }
+
+    .logo {
+        width: 20%;
+        position: absolute;
+        text-align: left;
+        margin: 3.5rem auto;
+        // animation: moveInLeftLogo 2s ease-in-out;
+        // animation-delay: 2s;
+        // transition: color 0.4s ease-in-out;
+        img {
+            width: 50%;
+        
+        }
+
+        @include respond(tab-land) {
+            width: 25%;
+
+        }
+
+
+        @include respond(tab-port) {
+            width: 60%;
+            top: -1rem;
+            //    width: 20rem;
+            margin-left: 2rem;
+        }
+    }
+
+    .menu-icon {
+        line-height: 3.2rem;
+        text-align: right;
+        box-sizing: border-box;
+        padding: 3.4rem 2.4rem;
+        cursor: pointer;
+        display: none;
+
+        @include respond(tab-port) {
+            display: block;
+        }
+    }
+
+}
+
+
