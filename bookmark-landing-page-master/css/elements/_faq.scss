@@ -39,11 +39,12 @@
   font-size: 1.8rem;
   font-weight: 400;
   border-bottom: 1px solid #e5e5e5;
+  transition: color .3s ease-in;
 
   &:hover,
   &::after{
     cursor: pointer;
-    color: $color-black;
+    color: $color-primary-light;
   }
   &:after {
     content: '';
@@ -85,7 +86,7 @@
   padding: 5px;
   width: 30px;
   height: 30px;
-  background: url(../../images/icon-arrow.svg) no-repeat center;
+  background: url(../../images/icon-arrow-red.svg) no-repeat center;
   transform: rotate(180deg);
 }
 

@@ -59,6 +59,7 @@
   &--icons {
     display: flex;
     margin-left: auto;
+    transition: .3s ease-in;
 
     @include respond(tab-port) {
       align-items: center;
