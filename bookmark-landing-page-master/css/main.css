@@ -187,7 +187,7 @@ nav .nav-links li {
   padding: 2rem 3.4rem;
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 56.25em) {
   nav .nav-links li {
     border-bottom: 0.2rem solid #fff;
     width: 100%;
@@ -216,7 +216,7 @@ nav .nav-links li a {
   transition: color 0.4s ease-in-out;
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 56.25em) {
   nav .nav-links li a {
     color: #fff;
     font-size: 2.5rem;
@@ -235,6 +235,15 @@ nav .nav-links li .logincolor {
   border-radius: .5rem;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 56.25em) {
+  nav .nav-links li .logincolor {
+    color: #fff;
+    background: transparent;
+    border: 0.2rem solid #fff;
+    padding: 1.6rem 20rem;
+  }
 }
 
 nav .nav-links li .logincolor:hover {
@@ -290,8 +299,9 @@ nav .burger {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 56.25em) {
   .nav-links {
+    margin-top: 2rem;
     position: absolute;
     top: 9.9rem;
     height: 100vh;
@@ -303,9 +313,9 @@ nav .burger {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: top;
+        -ms-flex-pack: top;
+            justify-content: top;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -316,13 +326,13 @@ nav .burger {
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    background-color: rgba(37, 43, 70, 0.9);
   }
   .nav-links li {
     opacity: 0;
   }
   .burger {
     display: block;
-    background-color: rgba(37, 43, 70, 0.9);
     -webkit-transition: -webkit-transform 0.5s ease-in;
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
@@ -962,7 +972,7 @@ nav .burger {
 }
 
 .footer__bookmark--container {
-  padding: 3rem 4rem;
+  padding: 4rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

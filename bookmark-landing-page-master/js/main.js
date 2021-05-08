@@ -9,7 +9,6 @@ let navSlide = () => {
   
       //Animate links
       navLinks.forEach((link, index) => {
-        //Dividing index by a number will give us a nice proprtional delay for each li
         if (link.style.animation) {
           link.style.animation = '';
         } else {

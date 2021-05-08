@@ -24,7 +24,7 @@ nav {
             display: inline-block;
             padding: 2rem 3.4rem;
 
-            @media screen and (max-width: 900px){
+            @include respond(tab-port){
                 border-bottom: .2rem solid $color-white;
                 width: 100%;
                 margin: 2rem auto;
@@ -34,7 +34,7 @@ nav {
 
 
             @include respond(tab-port) {
-    
+
                 color: $color-white;
 
 
@@ -51,7 +51,7 @@ nav {
                 animation-delay: .1s;
                 transition: color 0.4s ease-in-out;
 
-                @media screen and (max-width: 900px){
+                @include respond(tab-port){
                     color: $color-white;
                     font-size: 2.5rem;
 
@@ -68,6 +68,16 @@ nav {
                 padding: 1.6rem 3.6rem;
                 border-radius: .5rem;
                 transition: 0.4s ease-in-out;
+
+                @include respond(tab-port){
+                    color: $color-white;
+                    background: transparent;
+                    border: .2rem solid $color-white;
+                    padding: 1.6rem 20rem;
+                    
+                    
+
+                }
 
                 &:hover{
                     background-color: $color-white;
@@ -126,34 +136,37 @@ nav {
 }
 
 
-@media screen and (max-width: 900px){
+// navigation
+
+@include respond(tab-port){
 
 
 
 
     .nav-links{
+      margin-top: 2rem;
       position: absolute; 
       top: 9.9rem;
       height: 100vh;
       background-color: rgba($footer-color, .9);
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: top;
       align-items: center;
       width: 100%;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
-      
+      background-color: rgba($footer-color, .9);
       li{
         opacity: 0;
-
       }
 
     }
 
+
     .burger {
       display: block;
-      background-color: rgba($footer-color, .9);
+    //   background-color: rgba($footer-color, .9);
       transition: transform 0.5s ease-in;
     }
   }
